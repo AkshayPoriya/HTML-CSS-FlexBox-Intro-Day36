@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>WebLayout4 - Demo Flex</title>
+  <style>
+    body {
+      display: flex;
+      flex-flow: row wrap;
+    }
+
+    .column1 {
+      background-color: gold;
+      flex: 1;
+      display: flex;
+      flex-flow: column wrap;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .column2 {
+      flex: 4;
+      display: flex;
+      flex-flow: column wrap;
+      font-weight: bold;
+    }
+
+    .column2_row {
+      display: flex;
+      flex-flow: row wrap;
+    }
+
+    .column2_1 {
+      flex: 3;
+      display: flex;
+      flex-flow: column wrap;
+      text-align: left;
+      background: deepskyblue;
+    }
+
+    article {
+      padding: 10px;
+      margin: 10px;
+      background: aqua;
+    }
+
+    .column2_2 {
+      background-color: hotpink;
+      flex: 1;
+      display: flex;
+      flex-flow: column wrap;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      background: tomato;
+      font-weight: bold;
+      padding: 10px;
+    }
+
+    .footerContainer {
+      display: flex;
+      flex-flow: column wrap;
+      align-content: center;
+      background: lightgreen;
+      font-weight: bold;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="column1">
+    <div>
+      <p>Left Side Bar</p>
+    </div>
+  </div>
+
+  <div class="column2">
+    <header class="header">
+      <h1>HEADER - Sample Flexbox Example</h1>
+    </header>
+    <div class="column2_row">
+      <div class="column2_1">
+        <article>
+          <h2>First article</h2>
+          <p>This is first article, which is nested inside mainContainerItem which is nested in mainContent tag</p>
+        </article>
+        <article>
+          <h2>Second article</h2>
+          <p>This is Second article, which is nested inside mainContainerItem which is nested in mainContent tag</p>
+        </article>
+        <article>
+          <h2>Third article</h2>
+          <p>This is third article, which is nested inside mainContainerItem which is nested in mainContent tag</p>
+        </article>
+        <footer class="footerContainer">Footer</footer>
+      </div>
+      <div class="column2_2">
+        <div>
+          <p>Right Side Bar</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</body>
+
+</html>
